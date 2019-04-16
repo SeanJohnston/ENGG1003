@@ -5,7 +5,7 @@ int main() {
     int key = 1;
     char characters[100];
     int output;
-    
+    i
    
     
     scanf("%c", &characters[100]);
