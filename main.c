@@ -1,26 +1,20 @@
 #include <stdio.h> 
 
-
 int main() {
-    int key = 1;
-    char characters[100];
+    int key = 2;
+    char characters[100]= "HELLO WORLD";
     int output;
-    i
-   
+    int i=0;
     
-    scanf("%c", &characters[100]);
+    for(i=0;characters[i] != '\0'; i++){
+        if(characters[i] == ' '){
+           printf(" ");
+        }
+        else
+        output = (characters[i]-65 + key) % 26 + 65;
+        printf("%c", output);
+    }
     
-    for(int i=0; characters[100] != '\0'; i++){
-    output = characters[100]+key%26;
-    printf(" %c ", output);
-   
-    } 
-  
-
-    //printf("Encrypted message: %c", );
     
-
-    
- 
     return 0;
 }
